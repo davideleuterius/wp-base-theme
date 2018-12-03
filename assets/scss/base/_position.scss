@@ -1,0 +1,28 @@
+
+.pos-rel { position: relative }
+.pos-abs { position: absolute }
+.pos-fix    { position: fixed }
+
+.pos-top    { top: 0 }
+.pos-right  { right: 0 }
+.pos-bottom { bottom: 0 }
+.pos-left   { left: 0 }
+
+.z-1 { z-index: 1 }
+.z-2 { z-index: 2 }
+.z-3 { z-index: 3 }
+.z-4 { z-index: 4 }
+.z-top { z-index:50000 }
+
+.centered {  margin-left:auto; margin-right:auto; }
+.center-block { display:block; margin-left:auto; margin-right:auto; }
+
+@include sm-view { 
+  .sm-centered {  margin-left:auto; margin-right:auto; }
+  .sm-center-block { display:block; margin-left:auto; margin-right:auto; }
+} 
+
+@include xs-view { 
+  .xs-centered {  margin-left:auto; margin-right:auto; }
+  .xs-center-block { display:block; margin-left:auto; margin-right:auto; }
+} 

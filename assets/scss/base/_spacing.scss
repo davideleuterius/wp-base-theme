@@ -1,0 +1,31 @@
+.zero-all, .zero { margin: 0 !important; padding: 0 !important; }
+.zero-top { margin-top: 0 !important; padding-top: 0 !important; }
+.zero-bottom { margin-bottom: 0 !important; padding-bottom: 0 !important; }
+.zero-spc { margin: 0 !important; }
+.zero-spc-top { margin-top: 0 !important; }
+.zero-spc-bottom { margin-bottom: 0 !important; }
+.zero-spc-vertical { margin-top: 0 !important; margin-bottom: 0 !important; }
+.zero-spc-sides { margin-left: 0 !important; margin-right: 0 !important; }
+.zero-spc-left { margin-left: 0 !important; }
+.zero-spc-right { margin-right: 0 !important; }
+.zero-pad { padding: 0 !important; }
+.zero-pad-top { padding-top: 0 !important; }
+.zero-pad-bottom { padding-bottom: 0 !important; }
+.zero-pad-vertical { padding-top: 0 !important; padding-bottom: 0 !important; }
+.zero-pad-sides { padding-left: 0 !important; padding-right: 0 !important; }
+.zero-pad-left { padding-left: 0 !important; }
+.zero-pad-right { padding-right: 0 !important; }
+
+@include sm-view { 
+  @include setSpacing('sm', null, '0.5rem');
+  @include setSpacing('sm', '1', '1rem');
+  @include setSpacing('sm', '2', '2rem');
+  @include setSpacing('sm', '3', '3rem');
+ }
+
+@include md-view { 
+  @include setSpacing('md', null, '0.5rem');
+  @include setSpacing('md', '1', '1rem');
+  @include setSpacing('md', '2', '2rem');
+  @include setSpacing('md', '3', '3rem');
+}
