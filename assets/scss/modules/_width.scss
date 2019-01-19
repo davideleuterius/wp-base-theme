@@ -25,8 +25,8 @@
 
 .w-max { max-width:100%; }
 
-@include sm-view { @include setWidths('sm') }
-@include xs-view { @include setWidths('xs') }
 @include md-view { @include setWidths('md') }
 @include lg-view { @include setWidths('lg') }
 @include xl-view { @include setWidths('xl') }
+@include sm-view { @include setWidths('sm') }
+@include xs-view { @include setWidths('xs') }

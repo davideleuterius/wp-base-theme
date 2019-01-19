@@ -28,13 +28,16 @@
 .lh-19 { line-height:1.9 }
 .lh-2 { line-height:2 }
 
-.text-200 { font-weight: 200 !important; }
-.text-300 { font-weight: 300 !important; }
-.text-400 { font-weight: 400 !important; }
-.text-500 { font-weight: 500 !important; }
-.text-600 { font-weight: 600 !important; }
-.text-700 { font-weight: 700 !important; }
-.text-900 { font-weight: 900 !important; }
+.fw-200 { font-weight: 200 !important; }
+.fw-300 { font-weight: 300 !important; }
+.fw-400 { font-weight: 400 !important; }
+.fw-500 { font-weight: 500 !important; }
+.fw-600 { font-weight: 600 !important; }
+.fw-700 { font-weight: 700 !important; }
+.fw-900 { font-weight: 900 !important; }
+
+@include smallFontSizes(); 
+@include largeFontSizes(); 
 
 .text-uc { text-transform: uppercase !important; }
 .text-left { text-align: left; }
@@ -45,9 +48,10 @@
   .sm-text-left { text-align: left; }
   .sm-text-center { text-align: center; }
   .sm-text-right { text-align: right; }
- }
+}
+
 @include xs-view { 
   .xs-text-left { text-align: left; }
   .xs-text-center { text-align: center; }
   .xs-text-right { text-align: right; }
- }
+}

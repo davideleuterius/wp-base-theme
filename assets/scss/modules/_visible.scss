@@ -1,0 +1,6 @@
+.show { display:inherit; }
+.hide { display: none; }
+.sm-show, xs-show { display:none; }
+
+@include sm-view { .sm-show { display:inherit; } .sm-hide { display:none; } }
+@include xs-view { .xs-show { display:inherit; } .xs-hide { display:none; } }

@@ -60,6 +60,32 @@
   .#{$this-bp}-w-1-6 { width: 16.6667%; min-width: 16.6667%; }
 }
 
+@function increment-by-5($i, $unit){
+	@return 0 + ($i * 5) + $unit;
+}
+@function increment-by-10($i, $unit){
+	@return 0 + ($i * 10) + $unit;
+}
+
+
+@mixin smallFontSizes() {
+  $max: 300;
+  $step: 10;
+
+  @for $i from 5 through ceil($max/$step) {
+   .fs-#{increment-by-5($i, '')} { font-size: increment-by-5($i, #{'%'}) !important }
+  }
+}
+
+@mixin largeFontSizes() {
+  $max: 300;
+  $step: 10;
+
+  @for $i from 16 through ceil($max/$step) {
+   .fs-#{increment-by-10($i, '')} { font-size: increment-by-10($i, #{'%'}) !important }
+  }
+}
+
 @mixin xs-view { @media (max-width: #{$screen-xs}) { @content; } } 
 @mixin sm-view { @media (max-width: #{$screen-sm}) { @content; } } 
 @mixin md-view { @media (min-width: #{$screen-md}) { @content; } } 
