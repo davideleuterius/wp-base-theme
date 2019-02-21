@@ -1,0 +1,80 @@
+body { font-family: 'Source Sans Pro', sans-serif !important; }
+
+.merri { font-family: Merriweather, serif !important; }
+
+.site-top-strip {
+  background-image: url(../img/swoosh.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 28px;
+  line-height: 28px;
+  font-size: 16px; 
+}
+.site-header-wrap {
+  margin: 0 auto;
+  max-width: 1024px;
+  padding: 28px 72px 18px 27px;
+}
+
+.site-header-nav {
+  background: rgba(255, 255, 255 ,0.8) none repeat scroll 0 0;
+  position: relative;
+  z-index: 990;
+
+  .site-nav-wrap { height: 40px; max-width: 1040px; margin:0 auto;  padding: 0 27px; }
+}
+
+.site-header-nav a {
+  line-height: 40px;
+  padding: 0 50px;
+  color: #2372b9;
+}
+ul.menu {
+  list-style: outside none none;
+  margin: 0 -10px;
+  padding: 0;
+}
+ul.menu li {
+  background-image: url(../img/menu-border.png);
+  background-position: right center;
+  background-repeat: no-repeat;
+  display: block;
+  float: left;
+  margin: 0;
+}
+ul.menu li:last-child {
+  background-image:none;
+}
+
+
+.featured-section { 
+  position:relative; 
+  margin-top:-40px; 
+  background-position: center top 10%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 19;
+  .overlay {   
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0,.5);
+  }
+
+  .promo-image {
+    background-image: url(../img/promo-background.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 15px 40px 35px;
+    position: absolute;
+    right: 25px;
+    top: 37px;
+  }
+}
+

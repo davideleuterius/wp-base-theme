@@ -92,12 +92,7 @@ function custom_menu_order($menu_ord) {
         'separator1', // First separator
         'edit.php?post_type=page', // Pages
         'edit.php', // Posts
-        //'edit.php?post_type=acevent',
-        //'edit.php?post_type=acproduct',
-        //'edit.php?post_type=testimonial',
         'upload.php', // Media
-        //'edit-comments.php', // Comments
-        //'admin.php?page=acf-options-blog-sidebar',
         'separator2', // Second separator
         'themes.php', // Appearance
         'plugins.php', // Plugins

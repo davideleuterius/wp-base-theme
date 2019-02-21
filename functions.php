@@ -7,6 +7,8 @@
  require_once('functions/theme.php');
  require_once('functions/cleanup.php');
  require_once('functions/enqueue.php');
+ //require_once('functions/types.php');
+ //require_once('functions/taxonomy.php');
 
 // disable Gutenberg
 
